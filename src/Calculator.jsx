@@ -52,7 +52,7 @@ export const App = () => {
 	const handleEquals = () => {
 		setInputValue((prev) => {
 			const result = compute(prev);
-			if (result != 0) {
+			if (result !== null) {
 				setResultColorText(true);
 				return String(result);
 			}
