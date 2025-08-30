@@ -1,0 +1,43 @@
+.input {
+	width: 364px;
+	height: 54px;
+	font-size: 34px;
+	text-align: center;
+	margin-bottom: 8px;
+	border-radius: 8px;
+}
+.resultColor {
+	color: green;
+}
+.keypad {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 8px;
+}
+.keypad button {
+	border-radius: 8px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 25px;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: #6d6868;
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+.keypad button:hover {
+	border-color: #ededed;
+}
+.keypad button:focus,
+.keypad button:focus-visible {
+	outline: 4px auto -webkit-focus-ring-color;
+}
+.buttonClear {
+	color: rgb(245, 54, 54);
+}
+.buttonEquals {
+	color: rgb(41, 155, 255);
+}
+.buttonOperator {
+	color: rgb(213, 245, 0);
+}
